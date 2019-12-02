@@ -1,22 +1,20 @@
 <div id="smt" style="padding: 0px"></div>
-<script type="text/javascript" src="https://soma-assets.smaato.net/js/smaatoAdTag.js"></script>
-<script>
-    function callBackForSmaato(status){
-        if(status == "SUCCESS"){
-            script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://c.fqtag.com/tag/implement-r.js?org=BB6DvPmytpFndg8atDcN&p="+encodeURIComponent(document.referrer)+"&a="+navigator.userAgent+"&cmp=Zonaldson&fmt=banner&rt=display&sl=1&fq=1";
-
-    document.body.appendChild(script);
-        } else if (status == "ERROR"){
-            console.log("callBack is being called with status : " + status);
-        }
-    };
-    SomaJS.loadAd({
-        adDivId : "smt",
-        publisherId: 0,
-        adSpaceId: 0,
-        autoReload: 30,
-        format: "all",formatstrict: true,dimension: "xxlarge",width: 320,height: 50,
-    sync: false,},callBackForSmaato);
+<script type="text/javascript" src="https://soma-assets.smaato.net/js/smaatoAdTag.js"></script> <script> function callBackForSmaato(status) {
+   if(status=="SUCCESS") {
+       script=document.createElement("script");
+       script.type="text/javascript";
+       script.src="https://c.fqtag.com/tag/implement-r.js?org=BB6DvPmytpFndg8atDcN&p="+encodeURIComponent(document.referrer)+"&a="+navigator.userAgent+"&cmp=Zonaldson&fmt=banner&rt=display&sl=1&fq=1";
+       document.body.appendChild(script);
+   }
+   else if (status=="ERROR") {
+       console.log("callBack is being called with status : " + status);
+   }
+   }
+   
+   ;
+   SomaJS.loadAd( {
+   adDivId: "smt", publisherId: 0, adSpaceId: 0, autoReload: 30, format: "all", formatstrict: true, dimension: "xxlarge", width: 320, height: 50, sync: false,
+   }
+   
+   , callBackForSmaato);
 </script>
