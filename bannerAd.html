@@ -3,7 +3,11 @@
 <script>
     function callBackForSmaato(status){
         if(status == "SUCCESS"){
-            console.log("callBack is being called with status : " + status);
+            script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://c.fqtag.com/tag/implement-r.js?org=BB6DvPmytpFndg8atDcN&p="+encodeURIComponent(document.referrer)+"&a="+navigator.userAgent+"&cmp=Zonaldson&fmt=banner&rt=display&sl=1&fq=1";
+
+    document.body.appendChild(script);
         } else if (status == "ERROR"){
             console.log("callBack is being called with status : " + status);
         }
